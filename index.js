@@ -13,7 +13,7 @@ const TOKEN = auth.token;
 
 const bot = new TelegramBot( TOKEN, { polling: true } );
 
-// Matches "/echo [whatever]"
+//q Matches "/echo [whatever]"
 bot.onText(/\/random/, (msg, match) => {
   console.log(msg);
 
