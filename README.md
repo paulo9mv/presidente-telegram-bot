@@ -4,7 +4,7 @@
 
 Bot do Telegram que envia citações aleatórias de ~~quase~~ todos presidentes do Brasil. :mag: :computer:
 
-## Instalação
+## Instalação :hammer:
 Acesse https://t.me/presidente_brasil_bot para iniciar uma conversa com o bot no app Telegram. A partir daí, ele estará em seus contatos, podendo ser adicionado em grupos.
 
 ## Funcionamento
@@ -17,7 +17,7 @@ Acesse https://t.me/presidente_brasil_bot para iniciar uma conversa com o bot no
 
 ![Alt Text](assets/chat.gif)
 
-### Bibliotecas
+### Bibliotecas :books:
 Feito com dedicação, carinho e:
 - [NodeJS](https://nodejs.org/en/)
 - [Request Promise](https://github.com/request/request-promise)
@@ -25,6 +25,7 @@ Feito com dedicação, carinho e:
 - [Node Telegram Bot API](https://github.com/yagop/node-telegram-bot-api)
 
 #### Mais
+[Presidente BOT para Discord](https://github.com/paulo9mv/presidente-discord-bot) :computer:
 Contribuições são bem-vindas!
 
 :pencil2: **Paulo Viana**
