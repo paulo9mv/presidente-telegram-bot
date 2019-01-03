@@ -13,7 +13,7 @@ Bot do Telegram que envia citações aleatórias de ~~quase~~ todos presidentes 
 Feito com
 - [NodeJS](https://nodejs.org/en/)
 - [Cheerio](https://github.com/cheeriojs/cheerio) 
-- [Discord.JS](https://discord.js.org/#/)
+- [Node Telegram Bot API](https://github.com/yagop/node-telegram-bot-api)
 
 #### Mais
 Contribuições são bem-vindas!
