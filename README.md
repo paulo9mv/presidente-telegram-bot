@@ -15,7 +15,7 @@ Acesse https://t.me/presidente_brasil_bot para iniciar uma conversa com o bot no
 ### Bibliotecas
 Feito com dedicação, carinho e:
 - [NodeJS](https://nodejs.org/en/)
-- [Request](https://github.com/request/request)
+- [Request Promise](https://github.com/request/request-promise)
 - [Cheerio](https://github.com/cheeriojs/cheerio) 
 - [Node Telegram Bot API](https://github.com/yagop/node-telegram-bot-api)
 
