@@ -24,8 +24,9 @@ Feito com dedicação, carinho e:
 - [Cheerio](https://github.com/cheeriojs/cheerio) 
 - [Node Telegram Bot API](https://github.com/yagop/node-telegram-bot-api)
 
-#### Mais
+### Mais
 [Presidente BOT para Discord](https://github.com/paulo9mv/presidente-discord-bot) :computer:
+
 Contribuições são bem-vindas!
 
 :pencil2: **Paulo Viana**
