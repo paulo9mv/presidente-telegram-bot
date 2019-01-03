@@ -1,22 +1,24 @@
+//Modules
 const TelegramBot = require( 'node-telegram-bot-api' );
 const $ = require('cheerio');
-const presidentes = require('./presidentes.json');
 const rp = require('request-promise');
-const auth = require('./auth.json');
 const request = require('request');
-var fs = require('fs');
-const QUOTE_URL = "https://pt.wikiquote.org/wiki/";
 
+//Includes
+const presidentes = require('./presidentes.json');
+const auth = require('./auth.json');
+
+//Const
+const QUOTE_URL = "https://pt.wikiquote.org/wiki/";
 const TOKEN = auth.token;
 
 //Strings
 const HELP_TEXT = 'Utilize: \n/help - Seção de ajuda\n/random - Envia citação aleatória de presidente\n/about - Sobre o BOT';
 const ABOUT_TEXT = 'Presidente BOT\nDisponível em https://github.com/paulo9mv/presidente-discord-bot\nPresidente BOT para Telegram: https://t.me/presidente_brasil_bot';
 
-
 const bot = new TelegramBot( TOKEN, { polling: true } );
 
-//q Matches "/echo [whatever]"
+
 bot.onText(/\/help/, (msg, match) => {
   let chatId = msg.chat.id;
   msg.sendMessage(chatId, HELP_TEXT);
