@@ -10,6 +10,11 @@ Acesse https://t.me/presidente_brasil_bot para iniciar uma conversa com o bot no
 ## Funcionamento
 **Presidente BOT** funciona a partir do comando */random* que dispara uma consulta ao [WikiQuotes](https://pt.wikiquote.org/wiki/P%C3%A1gina_principal) e retorna uma citação aleatória de presidentes do Brasil.
 
+**Comandos**
+- /random    :arrow_right: Envia citação aleatória
+- /help  :arrow_right: Seção de ajuda
+- /about :arrow_right: Sobre o BOT
+
 ![Alt Text](assets/chat.gif)
 
 ### Bibliotecas
