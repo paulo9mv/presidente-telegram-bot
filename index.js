@@ -5,29 +5,22 @@ const rp = require('request-promise');
 const request = require('request');
 
 //Includes
+const strings = require('./strings/strings.json');
 const presidentes = require('./presidentes.json');
 const auth = require('./auth.json');
 
-//Const
-const QUOTE_URL = "https://pt.wikiquote.org/wiki/";
-const TOKEN = auth.token;
 
-//Strings
-const HELP_TEXT = 'Utilize: \n/help - Seção de ajuda\n/random - Envia citação aleatória de presidente\n/about - Sobre o BOT';
-const ABOUT_TEXT = 'Presidente BOT\nDisponível em https://github.com/paulo9mv/presidente-discord-bot\nPresidente BOT para Telegram: https://t.me/presidente_brasil_bot';
-
-const bot = new TelegramBot( TOKEN, { polling: true } );
-
+const bot = new TelegramBot( auth.token, { polling: true } );
 
 bot.onText(/\/help/, (msg, match) => {
   let chatId = msg.chat.id;
-  msg.sendMessage(chatId, HELP_TEXT);
-}
+  bot.sendMessage(chatId, strings.help);
+});
 
 bot.onText(/\/about/, (msg, match) => {
   let chatId = msg.chat.id;
-  msg.sendMessage(chatId, ABOUT_TEXT);
-}
+  bot.sendMessage(chatId, strings.about);
+});
 
 bot.onText(/\/random/, (msg, match) => {
 
@@ -36,7 +29,7 @@ bot.onText(/\/random/, (msg, match) => {
 
   let parseNome = nome.replace(/\s/g, "_");
 
-  rp(QUOTE_URL + parseNome)
+  rp(strings.url + parseNome)
   .then(function(html){
     let frases = [];
     let frase = $('.mw-parser-output', html);
@@ -129,5 +122,5 @@ bot.onText(/\/random/, (msg, match) => {
 
 bot.on('polling_error', (error) => {
   console.log('polling error');
-  console.log(error.code);
+  console.log(error);
 });

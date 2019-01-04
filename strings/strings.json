@@ -1,0 +1,5 @@
+{
+  "help" : "Utilize: \n/help - Seção de ajuda\n/random - Envia citação aleatória de presidente\n/about - Sobre o BOT",
+  "about" : "Sobre\nPresidente BOT para Discord: https://discordapp.com/oauth2/authorize?client_id=530209100236324866&scope=bot&permissions=0\nDisponível em https://github.com/paulo9mv/presidente-telegram-bot",
+  "url" : "https://pt.wikiquote.org/wiki/"
+}
